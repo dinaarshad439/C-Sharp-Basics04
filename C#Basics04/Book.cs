@@ -11,6 +11,9 @@ namespace C_Basics04
 
         internal int copiesInStock = 5;
 
+        public string? Title;
+
+
 
     }
 }

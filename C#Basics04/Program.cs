@@ -20,7 +20,7 @@
             #region (Q2) Accessing a Internal Field from Main
 
 
-            Console.WriteLine(book.copiesInStock);
+            // Console.WriteLine(book.copiesInStock);
 
             /*
              * Yes, It compiled.
@@ -28,6 +28,15 @@
              */
 
             #endregion
+
+            #region (Q3) Accessing a Public Field from Main
+
+            Console.WriteLine("Enter book title:");
+            book.Title = Console.ReadLine();
+            Console.WriteLine($"Book Title : {book.Title}");
+
+            #endregion
+
 
 
 
