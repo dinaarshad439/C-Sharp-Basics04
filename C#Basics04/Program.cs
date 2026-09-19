@@ -60,30 +60,35 @@
             #endregion
 
             #region (Q6) Convert an integer value to its corresponding Genre enum value
-            bool flag ;
-            int GenreNumber;
-            do
-            {
-                Console.WriteLine("Enter Genre number: ");
-                flag = int.TryParse(Console.ReadLine(), out GenreNumber);
 
-            }while (!flag || GenreNumber < 0);
+            //bool flag ;
+            //int GenreNumber;
+            //do
+            //{
+            //    Console.WriteLine("Enter Genre number: ");
+            //    flag = int.TryParse(Console.ReadLine(), out GenreNumber);
 
-            if (Enum.IsDefined(typeof(Genre), GenreNumber)) 
-            { 
-              Genre Value = (Genre)GenreNumber;
-              Console.WriteLine($"Book Genre : {Value}");
-            }
-            else
-            {
-                Console.WriteLine("Unknown genre");
-            }
-            
+            //}while (!flag || GenreNumber < 0);
 
-            
+            //if (Enum.IsDefined(typeof(Genre), GenreNumber)) 
+            //{ 
+            //  Genre Value = (Genre)GenreNumber;
+            //  Console.WriteLine($"Book Genre : {Value}");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Unknown genre");
+            //}
 
             #endregion
 
+            #region (Q7) Converting Enum to String
+
+            Genre genre = Genre.Fiction;
+            string Text = genre.ToString();
+            Console.WriteLine($"Book Genre after converting to string: {Text}");
+
+            #endregion
 
 
 
