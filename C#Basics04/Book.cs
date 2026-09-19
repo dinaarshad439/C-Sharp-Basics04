@@ -9,5 +9,8 @@ namespace C_Basics04
 
         private string Password = "Secret";
 
+        internal int copiesInStock = 5;
+
+
     }
 }

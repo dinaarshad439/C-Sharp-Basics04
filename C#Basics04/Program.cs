@@ -8,7 +8,7 @@
             #region (Q1) Accessing a Private Field from Main
 
             Book book = new Book();
-            Console.WriteLine(book.Password);
+            // Console.WriteLine(book.Password);
 
             /*
              * It will result in a compilation error. 
@@ -17,7 +17,20 @@
 
             #endregion
 
-            
+            #region (Q2) Accessing a Internal Field from Main
+
+
+            Console.WriteLine(book.copiesInStock);
+
+            /*
+             * Yes, It compiled.
+             * As Variable copies in stock is internal so its accessible only within the same assembly.
+             */
+
+            #endregion
+
+
+
         }
     }
 }
