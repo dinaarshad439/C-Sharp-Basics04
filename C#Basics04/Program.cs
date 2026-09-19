@@ -39,9 +39,26 @@
 
             #region (Q4) Using Enum with a Property
 
-            Console.WriteLine($"Book Genre: {book.Genre}");
+            //Console.WriteLine($"Book Genre: {book.Genre}");
 
             #endregion
+
+            #region (Q5) Casting Enum Values to int
+
+            Genre Genre1 = Genre.Fiction;
+            int Value1 = (int)Genre1;
+            Console.WriteLine($"{Genre1} : {Value1}");
+
+            Genre Genre2 = Genre.NonFiction;
+            int Value2 = (int)Genre2;
+            Console.WriteLine($"{Genre2} : {Value2}");
+
+            Genre Genre3 = Genre.Science;
+            int Value3 = (int)Genre3;
+            Console.WriteLine($"{Genre3} : {Value3}");
+
+            #endregion
+
 
 
 
