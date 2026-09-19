@@ -45,19 +45,45 @@
 
             #region (Q5) Casting Enum Values to int
 
-            Genre Genre1 = Genre.Fiction;
-            int Value1 = (int)Genre1;
-            Console.WriteLine($"{Genre1} : {Value1}");
+            //Genre Genre1 = Genre.Fiction;
+            //int Value1 = (int)Genre1;
+            //Console.WriteLine($"{Genre1} : {Value1}");
 
-            Genre Genre2 = Genre.NonFiction;
-            int Value2 = (int)Genre2;
-            Console.WriteLine($"{Genre2} : {Value2}");
+            //Genre Genre2 = Genre.NonFiction;
+            //int Value2 = (int)Genre2;
+            //Console.WriteLine($"{Genre2} : {Value2}");
 
-            Genre Genre3 = Genre.Science;
-            int Value3 = (int)Genre3;
-            Console.WriteLine($"{Genre3} : {Value3}");
+            //Genre Genre3 = Genre.Science;
+            //int Value3 = (int)Genre3;
+            //Console.WriteLine($"{Genre3} : {Value3}");
 
             #endregion
+
+            #region (Q6) Convert an integer value to its corresponding Genre enum value
+            bool flag ;
+            int GenreNumber;
+            do
+            {
+                Console.WriteLine("Enter Genre number: ");
+                flag = int.TryParse(Console.ReadLine(), out GenreNumber);
+
+            }while (!flag || GenreNumber < 0);
+
+            if (Enum.IsDefined(typeof(Genre), GenreNumber)) 
+            { 
+              Genre Value = (Genre)GenreNumber;
+              Console.WriteLine($"Book Genre : {Value}");
+            }
+            else
+            {
+                Console.WriteLine("Unknown genre");
+            }
+            
+
+            
+
+            #endregion
+
 
 
 

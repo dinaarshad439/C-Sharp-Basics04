@@ -4,6 +4,9 @@ using System.Text;
 
 namespace C_Basics04
 {
+    /// <summary>
+    /// Represents a book with its title, genre, and stock information.
+    /// </summary>
     internal class Book
     {
 
