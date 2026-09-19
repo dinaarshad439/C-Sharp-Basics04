@@ -84,9 +84,17 @@
 
             #region (Q7) Converting Enum to String
 
-            Genre genre = Genre.Fiction;
-            string Text = genre.ToString();
-            Console.WriteLine($"Book Genre after converting to string: {Text}");
+            //Genre genre = Genre.Fiction;
+            //string Text = genre.ToString();
+            //Console.WriteLine($"Book Genre after converting to string: {Text}");
+
+            #endregion
+
+            #region (Q8) Parsing String to Enum
+
+            string genreText = "Science";
+            Genre value = (Genre)Enum.Parse(typeof(Genre), genreText);
+            Console.WriteLine($"Book genre after converting to enum : {value}");
 
             #endregion
 
