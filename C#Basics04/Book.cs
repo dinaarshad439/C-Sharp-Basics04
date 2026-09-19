@@ -13,6 +13,7 @@ namespace C_Basics04
 
         public string? Title;
 
+        public Genre Genre { set; get; } = Genre.Science;
 
 
     }

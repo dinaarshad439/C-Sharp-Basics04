@@ -31,11 +31,18 @@
 
             #region (Q3) Accessing a Public Field from Main
 
-            Console.WriteLine("Enter book title:");
-            book.Title = Console.ReadLine();
-            Console.WriteLine($"Book Title : {book.Title}");
+            //Console.WriteLine("Enter book title:");
+            //book.Title = Console.ReadLine();
+            //Console.WriteLine($"Book Title : {book.Title}");
 
             #endregion
+
+            #region (Q4) Using Enum with a Property
+
+            Console.WriteLine($"Book Genre: {book.Genre}");
+
+            #endregion
+
 
 
 
