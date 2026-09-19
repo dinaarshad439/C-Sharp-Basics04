@@ -92,15 +92,29 @@
 
             #region (Q8) Parsing String to Enum
 
-            string genreText = "Science";
-            Genre value = (Genre)Enum.Parse(typeof(Genre), genreText);
-            Console.WriteLine($"Book genre after converting to enum : {value}");
+            //string genreText = "Science";
+            //Genre value = (Genre)Enum.Parse(typeof(Genre), genreText);
+            //Console.WriteLine($"Book genre after converting to enum : {value}");
 
             #endregion
 
+            #region (Q9) Checking if String is a Valid Enum
 
+            Console.WriteLine("Enter Book Genre: ");
+            string? genreText = Console.ReadLine();
+            Genre genre;
+            bool flag = Enum.TryParse<Genre>(genreText, ignoreCase:true , out genre);
 
+            if (flag)
+            {
+                Console.WriteLine($"Book Genre: {genre} ");
+            }
+            else
+            {
+                Console.WriteLine("Unknown genre");
+            }
 
+            #endregion
 
 
         }
